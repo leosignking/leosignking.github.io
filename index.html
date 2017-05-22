@@ -3,40 +3,279 @@
 <head>
     <meta charset="UTF-8">
     <title>Sridhar Reddy Redreddy</title>
-    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" />
+    <link rel="stylesheet"
+          type="text/css"
+          href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" >
+    <link rel="stylesheet"
+          href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"
+          integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ"
+          crossorigin="anonymous">
+    <link rel="stylesheet"
+          type="text/css"
+          href="assets/css/index.css" >
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+            integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"
+            integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
+            crossorigin="anonymous"></script>
+
 </head>
-<body>
-    <div class="page-loader">
-        <div class="loader">Loading...</div>
-    </div>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+    <header class="navbar fixed-top navbar-toggleable-md navbar-light bg-faded">
+        <nav class="container">
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand" href="#">Portfolio</a>
 
-    <nav class="navbar navbar-fixed-top navbar-custom navbar-transparent">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#custom-collapse">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-
-                <!-- YOU LOGO HERE -->
-                <a class="navbar-brand" href="index.html">
-                    <!-- IMAGE OR SIMPLE TEXT -->
-                    <img class="light-logo" src="assets/images/logo-light.png" width="100" alt="">
-                </a>
-            </div>
-
-            <div class="collapse navbar-collapse" id="custom-collapse">
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a href="education.html">About Me</a> </li>
-                    <li><a href="education.html">Experience</a> </li>
-                    <li><a href="education.html">Education</a> </li>
-                    <li><a href="education.html">Contact</a> </li>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#experience">Experience</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#education">Education</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Skills</a>
+                    </li>
                 </ul>
             </div>
+        </nav>
+    </header>
+
+
+    <div class="container">
+
+        <section id="home">
+            <div class="jumbotron">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <ul class="list-group center-list">
+                            <li class="list-group-item about">
+                                What's up, Dear Reader. I'm Sridhar, a web and mobile developer.
+                                I have a master degree in Computer Science from Florida Institute of Technology.
+                                I have experience in designing and developing multi-tier web applications using Java/J2EE, Struts,
+                                Spring, Hibernate, JPA, Angular, and other frameworks. Knowledge in developing mobile applications for Android and iOS.
+                            </li>
+                        </ul>
+                        <ul class="col">
+                            <li class="email"><i class="fa fa-envelope"></i><a href="mailto:redreddy.sridhar@gmail.com"> redreddy.sridhar@gmail.com</a></li>
+                            <li><i class="fa fa-phone"></i> <a href="tel: 014073145199">+1 (407) 314-5199</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-6">
+                        <img src="assets/images/profile.JPG"></img>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="experience">
+            <div class="container section">
+                <h3 class="title text-center">Work Experience</h3>
+                <div class="timeline">
+                    <div class="item">
+                        <div class="work-place">
+                            <h3 class="place">Thales USA</h3>
+                            <div class="location">
+                                <i class="fa fa-map-marker" aria-hidden="true"></i>Melbourne, FL
+                            </div>
+                        </div>
+                        <div class="job-meta">
+                            <div class="title">Java Developer</div>
+                            <div class="time">2016 - 2017</div>
+                        </div>
+                        <div class="job-desc">
+                            <p>Job Description</p>
+                            <ul>
+                                <li>Achievements</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline">
+                    <div class="item">
+                        <div class="work-place">
+                            <h3 class="place">Netboss Technologies</h3>
+                            <div class="location">
+                                <i class="fa fa-map-marker" aria-hidden="true"></i>Sebastian, FL
+                            </div>
+                        </div>
+                        <div class="job-meta">
+                            <div class="title">Software Developer - Intern</div>
+                            <div class="time">2016 - 2016</div>
+                        </div>
+                        <div class="job-desc">
+                            <p>Job Description</p>
+                            <ul>
+                                <li>Achievements</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline">
+                    <div class="item">
+                        <div class="work-place">
+                            <h3 class="place">Florida Institute of Technology</h3>
+                            <div class="location">
+                                <i class="fa fa-map-marker" aria-hidden="true"></i>Melbourn, FL
+                            </div>
+                        </div>
+                        <div class="job-meta">
+                            <div class="title">Research Assistant</div>
+                            <div class="time">2014 - 2015</div>
+                        </div>
+                        <div class="job-desc">
+                            <p>Job Description</p>
+                            <ul>
+                                <li>Achievements</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline">
+                    <div class="item">
+                        <div class="work-place">
+                            <h3 class="place">Canvera Digital Technologies</h3>
+                            <div class="location">
+                                <i class="fa fa-map-marker" aria-hidden="true"></i>Bangalore, India
+                            </div>
+                        </div>
+                        <div class="job-meta">
+                            <div class="title">Software Engineer</div>
+                            <div class="time">2013 - 2014</div>
+                        </div>
+                        <div class="job-desc">
+                            <p>Job Description</p>
+                            <ul>
+                                <li>Achievements</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline">
+                    <div class="item">
+                        <div class="work-place">
+                            <h3 class="place">Innoviti Embedded Solutions Pvt Ltd.</h3>
+                            <div class="location">
+                                <i class="fa fa-map-marker" aria-hidden="true"></i>Bangalore, India
+                            </div>
+                        </div>
+                        <div class="job-meta">
+                            <div class="title">Software Engineer</div>
+                            <div class="time">2010 - 2013</div>
+                        </div>
+                        <div class="job-desc">
+                            <p>Job Description</p>
+                            <ul>
+                                <li>Achievements</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="education">
+            <div class="container section">
+                <h3 class="title text-center">Education</h3>
+                <div class="row">
+                    <div class="item col-sm-6">
+                        <div class="item-inner">
+                            <h3 class="degree">MS Computer Science</h3>
+                            <div class="education-body">
+                                Florida Institute of Technology
+                            </div>
+                            <div class="time">2014 - 2016</div>
+                            <div class="desc">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item col-sm-6">
+                        <div class="item-inner">
+                            <h3 class="degree">B.Tech Computer Science</h3>
+                            <div class="education-body">
+                                Jawaharlal Nehru Technology University
+                            </div>
+                            <div class="time">2006 - 2010</div>
+                            <div class="desc">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills">
+            <div class="container section">
+                <h3 class="title text-center">Professional Skills</h3>
+                <span class="skill-tag">Java/J2EE</span>
+                <span class="skill-tag">JSP</span>
+                <span class="skill-tag">Servlets</span>
+                <span class="skill-tag">Struts</span>
+                <span class="skill-tag">Spring MVC</span>
+                <span class="skill-tag">Spring Boot</span>
+                <span class="skill-tag">Spring Data</span>
+                <span class="skill-tag">jQuery</span>
+                <span class="skill-tag">Hibernate</span>
+                <span class="skill-tag">JPA</span>
+                <span class="skill-tag">Log4J</span>
+                <span class="skill-tag">ELK Stack</span>
+                <span class="skill-tag">RESTful</span>
+                <span class="skill-tag">SOAP</span>
+                <span class="skill-tag">Web Services</span>
+                <span class="skill-tag">HTML</span>
+                <span class="skill-tag">CSS</span>
+                <span class="skill-tag">JavaScript</span>
+                <span class="skill-tag">SQL</span>
+                <span class="skill-tag">Git</span>
+            </div>
+        </section>
+
+
+
+        <!--<div id="contact" class="border-0">
+            <form>
+                <div class="form-group row">
+                    <label for="fName" class="col-sm-2 col-form-label">First Name</label>
+                    <div class="col-sm-5">
+                        <input type="text" class="form-control" id="fName" placeholder="First Name">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="lName" class="col-sm-2 col-form-label">Last Name</label>
+                    <div class="col-sm-5">
+                        <input type="text" class="form-control" id="lName" placeholder="Last Name">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="email" class="col-sm-2 col-form-label">Email</label>
+                    <div class="col-sm-5">
+                        <input type="email" class="form-control" id="email" placeholder="Email Address">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="offset-sm-2 col-sm-5">
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                        <button type="reset" class="btn btn-primary">Reset</button>
+                    </div>
+                </div>
+            </form>
+        </div>-->
+    </div>
+
+    <!--<footer class="footer">
+        <div class="container">
+            <p>Copyright &copy; 2017 | All rights reserved | <a href="mailto:redreddy.sridhar@gmail.com?subject=Contact">Email</a> </p>
         </div>
-    </nav>
+    </footer>-->
+
 </body>
 </html>
