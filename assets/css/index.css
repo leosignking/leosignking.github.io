@@ -1,0 +1,128 @@
+
+nav ul {
+    width: 80%;
+    top: 0.1%;
+    list-style-type: none;
+    margin: 0 10%;
+    padding: 0;
+    background-color: #333;
+    overflow: hidden;
+    position: fixed;
+    border-radius: 4px;
+    z-index: 1;
+}
+
+nav {
+    margin-bottom: 1%;
+}
+
+li {
+    width: 25%;
+    float: left;
+}
+nav ul li a {
+    display: block;
+    color: white;
+    padding: 14px 16px;
+    text-align: center;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
+}
+
+#home {
+    width: 80%;
+    height: 40%;
+    margin: 3% 10% 0;
+    border-radius: 4px;
+    position: absolute;
+    background-color: white;
+}
+.user {
+    display: inline-block;
+    width: 20%;
+    height: 75%;
+    border-radius: 50%;
+    background-size: cover;
+    margin: 3% 40% 0;
+}
+
+.profile {
+    background-image: url('../images/profile.JPG');
+}
+
+#about {
+    width: 80%;
+    margin: 25% 10% 0;
+    position: absolute;
+    background-color: white;
+    text-align: justify;
+}
+
+#contact {
+    width: 80%;
+    margin: 30% 10% 5%;
+    position: absolute;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+label {
+    width: 20%;
+    margin: 1% 0;
+    padding: 12px 20px;
+}
+
+input[type=text], select {
+    width: 40%;
+    display: inline-block;
+    padding: 12px 20px;
+    margin: 1% 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.message-field * {
+    vertical-align: middle;
+    margin-left: 0.5%;
+}
+textarea {
+    width: 90%;
+    height: 150px;
+    padding: 12px 20px;
+    margin: 1% 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: none;
+}
+
+.button {
+    width: 40%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 1% 4%;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.button:hover {
+    background-color: #45a049;
+}
+
+footer {
+    width: 80%;
+    bottom: 0;
+    margin: 1% 10% 0;
+    position: fixed;
+    background-color: whitesmoke;
+    border-radius: 4px;
+    text-align: center;
+}

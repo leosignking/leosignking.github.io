@@ -3,40 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <title>Sridhar Reddy Redreddy</title>
-    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" />
+    <link rel="stylesheet" type="text/css" href="./assets/css/index.css">
 </head>
 <body>
-    <div class="page-loader">
-        <div class="loader">Loading...</div>
-    </div>
-
-    <nav class="navbar navbar-fixed-top navbar-custom navbar-transparent">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#custom-collapse">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-
-                <!-- YOU LOGO HERE -->
-                <a class="navbar-brand" href="index.html">
-                    <!-- IMAGE OR SIMPLE TEXT -->
-                    <img class="light-logo" src="assets/images/logo-light.png" width="100" alt="">
-                </a>
-            </div>
-
-            <div class="collapse navbar-collapse" id="custom-collapse">
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a href="education.html">About Me</a> </li>
-                    <li><a href="education.html">Experience</a> </li>
-                    <li><a href="education.html">Education</a> </li>
-                    <li><a href="education.html">Contact</a> </li>
-                </ul>
-            </div>
-        </div>
+    <nav>
+       <ul>
+           <li><a href="#" class="active">Home</a></li>
+           <li><a href="#">About</a></li>
+           <li><a href="#">Resume</a></li>
+           <li><a href="#">Contact</a></li>
+       </ul>
     </nav>
+    <div>
+        <div id="home">
+            <div class="user profile"></div>
+        </div>
+        <div id="about">
+            <p>What's up, Dear Reader. I'm Sridhar, a web and mobile developer.
+                I have a master degree in Computer Science from Florida Institute of Technology.
+                I have experience in designing and developing multi-tier web applications using Java/J2EE, Struts,
+                Spring, Hibernate, JPA, Angular, and other frameworks. Knowledge in developing mobile applications for Android and iOS.
+            </p>
+        </div>
+        <div id="contact">
+            <form>
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" name="fistname" placeholder="First Name" max="50" min="2">
+
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" name="lastname" placeholder="Last Name" max="50" min="2">
+
+                <p class="message-field">
+                    <label for="msg">Message</label>
+                    <textarea id="msg" name="msg" placeholder="Enter your message...."></textarea>
+                </p>
+
+                <input type="submit" class="button" value="Submit">
+                <input type="reset" class="button" value="Reset">
+            </form>
+        </div>
+    </div>
+    <footer>
+        <p>Copyright &copy; 2017 | All rights reserved | <a href="mailto:redreddy.sridhar@gmail.com?subject=Contact">Email</a> </p>
+    </footer>
 </body>
 </html>
