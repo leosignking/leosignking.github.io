@@ -11,7 +11,7 @@ function fetch(frequency) {
 	if(frequency == undefined || frequency == 'month') {
 		url = 'https://www.coinbase.com/api/v2/prices/BTC-USD/historic?period=month';
 	} else {
-		url 'https://www.coinbase.com/api/v2/prices/BTC-USD/historic?period='+ frequency ;
+		url = 'https://www.coinbase.com/api/v2/prices/BTC-USD/historic?period='+ frequency ;
 	}
 	//console.log('fetching data from ', url);
 	api(url);
