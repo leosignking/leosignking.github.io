@@ -2,16 +2,16 @@
 var h=200;
 var w=$(window).width();
 
-var url = 'https://www.coinbase.com/api/v2/prices/BTC-USD/historic?period=';
+var url; 
 
 //var url = 'month.json';
 var dataSet;
 
 function fetch(frequency) {
 	if(frequency == undefined || frequency == 'month') {
-		url += 'month';
+		url = 'https://www.coinbase.com/api/v2/prices/BTC-USD/historic?period=month';
 	} else {
-		url += frequency ;
+		url 'https://www.coinbase.com/api/v2/prices/BTC-USD/historic?period='+ frequency ;
 	}
 	//console.log('fetching data from ', url);
 	api(url);
@@ -25,7 +25,6 @@ function api(url) {
 			dataSet = success.data.prices;
 			//console.log('successfully fetched data' , dataSet);	
 			buildLine();	
-			url = 'https://www.coinbase.com/api/v2/prices/BTC-USD/historic?period=';	
 		}
 	});
 }
