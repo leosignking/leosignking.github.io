@@ -19,13 +19,13 @@ function fetch(frequency) {
 
 function api(url) {
 	d3.json(url, function(error, success) {
-		url = 'https://www.coinbase.com/api/v2/prices/BTC-USD/historic?period=';
 		if(error) {
 			console.log('error while fetching data', error);
 		} else {
 			dataSet = success.data.prices;
 			//console.log('successfully fetched data' , dataSet);	
-			buildLine();		
+			buildLine();	
+			url = 'https://www.coinbase.com/api/v2/prices/BTC-USD/historic?period=';	
 		}
 	});
 }
